@@ -1,0 +1,117 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	  <!--<RootNamespace>$safeprojectname$</RootNamespace>
+	  <AssemblyName>$safeprojectname$</AssemblyName>-->
+	  <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.100.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="MongoDB.Driver" Version="2.17.1" />
+    <PackageReference Include="SkiaSharp" Version="2.88.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="APIs\" />
+    <None Remove="Data\" />
+    <None Remove="Helpers\" />
+    <None Remove="Installers\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Services\" />
+    <None Remove="Models\" />
+    <None Remove="Params\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Extensions\" />
+    <None Remove="Enums\" />
+    <None Remove="Models\BaseModels\" />
+    <None Remove="MongoDB.Driver" />
+    <None Remove="SkiaSharp" />
+    <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
+    <None Remove="Files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Installers\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Models\BaseModels\" />
+    <Folder Include="Files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="files\2022_12_26_15_30_50\0716f6f6-b6ab-40ec-933f-3a4300398fa0.jpg" />
+    <Content Include="files\2022_12_26_15_30_56\1a501cac-199e-437b-a485-3d22636a3609.jpg" />
+    <Content Include="files\2022_12_26_15_47_04\f54f185c-ecd8-4cab-9f7b-81b441253c28.jpg" />
+    <Content Include="files\2022_12_26_15_47_10\cf7b102c-6acb-4689-9211-71525968f675.jpg" />
+    <Content Include="files\2022_12_26_15_47_45\93555cce-89cf-48a2-9750-da8d33764781.jpg" />
+    <Content Include="files\2022_12_26_15_48_02\3c97255b-0144-4f6f-b805-080595c950d3.jpg" />
+    <Content Include="files\2022_12_26_15_53_17\702cd526-2b11-4129-946e-552dfc6a4944.jpg" />
+    <Content Include="files\2022_12_26_15_53_34\2b614b28-3e9b-451c-a32b-e758050f2e08.jpg" />
+    <Content Include="files\2022_12_26_15_54_37\3ca067a6-e19a-45c0-bac1-80d13c7310b0.jpg" />
+    <Content Include="files\2022_12_26_16_05_27\78a5fd95-d826-4054-9ff4-798caac5cada.jpg" />
+    <Content Include="files\2022_12_26_16_06_55\90a2bd84-d9f6-401d-b0b3-5b1ed42182b5.jpg" />
+    <Content Include="files\2022_12_26_16_07_33\3590e408-130f-4a6e-8852-900599f6db50.jpg" />
+    <Content Include="files\2022_12_26_17_09_55\8ea74218-b4ea-4a83-8bdf-43bce8585b91.jpg" />
+    <Content Include="files\2022_12_26_17_10_09\94ac73f3-6835-4eea-b5a5-d4e52ac5036c.jpg" />
+    <Content Include="files\2022_12_26_17_10_21\2edc8f95-bfbd-4e16-874b-3f17f850162f.jpg" />
+    <Content Include="files\2022_12_26_17_10_35\4573cf3d-5eeb-420a-b704-16d1c41bd2af.jpg" />
+    <Content Include="files\2022_12_26_17_10_48\63b1ad58-7a62-4728-abc9-d4000af13a1f.jpg" />
+    <Content Include="files\2022_12_26_17_11_00\fe0431cf-6ec4-440a-b4fe-51995b202fee.jpg" />
+    <Content Include="files\2022_12_26_17_12_04\561ba547-987b-4aaa-8f8d-20c1105310b1.png" />
+    <Content Include="files\2022_12_26_17_12_20\74329151-2d08-4ec3-8e5f-a35f815108fe.png" />
+    <Content Include="files\2022_12_26_17_12_35\722959f8-2a26-4bf4-8ac4-a5bd5b2b4ffd.png" />
+    <Content Include="files\2022_12_26_17_12_42\67b2fb42-9696-438f-90eb-27aa9d9a4ef7.png" />
+    <Content Include="files\2022_12_26_17_12_50\46c6a892-b329-4a26-a35d-9cf90eb9d4fc.png" />
+    <Content Include="files\2022_12_26_17_13_57\6697ec4b-6b5a-4eeb-8075-92b3cf4250bc.jpg" />
+    <Content Include="files\2022_12_26_17_14_01\7eef0ecc-aa18-4769-b25a-4332db7f2eb3.jpg" />
+    <Content Include="files\2022_12_26_17_14_05\99382038-b0dd-4cd7-bfbd-931eee05e8fe.jpg" />
+    <Content Include="files\2022_12_26_17_14_09\34292431-ffd7-4521-a638-5a15300dc915.jpg" />
+    <Content Include="files\2022_12_26_17_14_14\19c0f85a-c132-4ebc-b632-d4f13fb9e8e4.jpg" />
+    <Content Include="files\2022_12_26_17_14_22\c2a05b33-0e58-4db4-8dea-a589a9b5b5ed.jpg" />
+    <Content Include="files\2022_12_28_13_47_20\d5f922e4-fb92-4769-b1bf-80541fb94686.jpg" />
+    <Content Include="files\2022_12_28_13_48_49\9be0d55b-1366-4233-b040-729273212dd7.jpg" />
+    <Content Include="files\2022_12_28_13_49_13\e322f5ec-5395-43d8-9de7-8e62cbb72721.jpg" />
+    <Content Include="files\2022_12_28_13_52_00\80d4270b-d6c3-4530-9021-5520d5ca7119.jpg" />
+    <Content Include="files\2022_12_28_13_52_54\bddc8591-c04f-492c-ba46-8447ac000607.jpg" />
+    <Content Include="files\2022_12_28_14_05_56\6152d2c0-986d-488c-b7a4-e35dc62c5f8b.jpg" />
+    <Content Include="files\2022_12_28_14_13_55\42bb594d-1cb1-4213-94d5-5a25beaf3b9d.jpg" />
+    <Content Include="files\2022_12_28_14_13_55\d9d39221-7581-4761-8dc4-ec32cdce8763.jpg" />
+    <Content Include="files\2022_12_28_14_15_24\845e745f-cf31-4cf5-b189-15c15cfb3d67.jpg" />
+    <Content Include="files\2022_12_28_14_16_05\acd71993-fbfb-4d80-b5f6-f465d5190933.png" />
+    <Content Include="files\2022_12_28_14_16_06\fef99642-6342-428b-86ad-8fa8bb727ffa.png" />
+    <Content Include="files\2022_12_28_15_02_56\3634b4db-bd39-4293-be31-be2dcfa3f1d9.jpg" />
+    <Content Include="files\2022_12_28_15_02_56\48ec9e8c-d238-41dc-b632-2c5263c7dab1.png" />
+    <Content Include="files\2022_12_28_15_02_56\926d3a22-0735-4f6e-a2a3-7ad3ef4512db.jpg" />
+    <Content Include="files\2022_12_28_15_02_56\e2f1a8c2-f723-45bf-9873-d0bedd313319.jpg" />
+    <Content Include="files\2022_12_28_15_02_56\f63d64de-8914-49a4-9845-56c3d702dff9.jpg" />
+    <Content Include="files\2022_12_28_15_05_26\0f87a70d-e3ae-4c84-821a-0f5d37b7e7a2.jpg" />
+    <Content Include="files\2022_12_28_15_05_26\ec7233a4-51af-4d8c-9e14-f179a48ee0ff.jpg" />
+    <Content Include="files\2022_12_28_15_05_27\5925b729-00a1-481a-9b07-2bdf04478938.jpg" />
+    <Content Include="files\2022_12_28_15_05_27\8e06d622-3825-491d-9679-c232a6eaaea8.jpg" />
+    <Content Include="files\2022_12_29_17_30_47\fbf1ca5f-86df-4afc-afc8-fdbf5788405e.jpg" />
+    <Content Include="files\2022_12_29_17_32_26\8815a5d5-3e66-4c39-b455-03265ece839c.jpg" />
+    <Content Include="files\2022_12_29_17_32_32\4df92a67-23f2-4158-bc8b-8a4d5f56bb6e.jpg" />
+    <Content Include="files\2022_12_29_17_35_26\8a719942-b60f-41ea-b5f8-244cc92c2a23.jpg" />
+    <Content Include="files\2022_12_29_17_35_32\4c3a6a0d-a75a-4500-b8ea-cee9bf2ccd4d.jpg" />
+    <Content Include="files\2022_12_29_17_35_37\1ab6c8d4-6b93-497a-85cd-1910f1296943.jpg" />
+    <Content Include="files\2022_12_29_17_35_43\674482f7-e999-4ada-8f6f-67b619c30c20.jpg" />
+    <Content Include="files\2022_12_29_17_37_58\178f4327-343c-4616-9766-3d0f014665a6.jpg" />
+    <Content Include="files\2022_12_29_17_39_54\88906033-6f97-4292-b191-63354d88e3ea.jpg" />
+    <Content Include="files\2022_12_29_17_42_00\25ae339d-190c-414b-8868-ed5bb1f6ee9f.jpg" />
+    <Content Include="files\2022_12_29_17_43_05\16995050-49d7-4c58-977c-29a4abf9da3e.jpg" />
+    <Content Include="files\2022_12_30_03_05_41\4dba6e6f-df45-40b7-9dbc-330447e011d2.jpg" />
+    <Content Include="files\2022_12_30_11_23_05\c69daefa-55e5-4a87-b7c9-b22d34e14a23.jpg" />
+    <Content Include="files\2022_12_30_11_26_42\a43e38a1-ae89-486b-9044-1dff9d0e51cf.jpg" />
+    <Content Include="files\2022_12_30_16_15_39\3eff3cdf-8a7a-4206-a567-6fd6352cd0fa.png" />
+    <Content Include="files\2022_12_30_16_16_42\6cc50960-ea64-4454-acea-71ddd57878ba.png" />
+    <Content Include="files\2022_12_30_16_16_58\51628be7-ea9a-45e2-a054-621660e36def.png" />
+    <Content Include="files\2022_12_31_14_02_14\dde1e913-5ae5-4d36-a27d-707cf050719f.png" />
+  </ItemGroup>
+</Project>
